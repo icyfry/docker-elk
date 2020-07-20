@@ -28,6 +28,7 @@ workflows:
     jobs:
         - aws-eks/create-cluster:
             cluster-name: eks-demo-deployment
+            aws-region: $AWS_REGION
         - aws-eks/install-helm-on-cluster:
             cluster-name: eks-demo-deployment
             enable-cluster-wide-admin-access: true
