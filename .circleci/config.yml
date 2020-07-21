@@ -30,7 +30,7 @@ workflows:
         - aws-eks/create-cluster:
             cluster-name: eks-demo-deployment
             aws-region: $AWS_REGION
-            kubernetes_version: 1.17
+            kubernetes-version: 1.17
             show-eksctl-command: true
         - aws-eks/install-helm-on-cluster:
             cluster-name: eks-demo-deployment
